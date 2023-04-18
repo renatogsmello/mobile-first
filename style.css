@@ -7,6 +7,9 @@
 button {
 	all: unset;
 }
+button:hover {
+	cursor: pointer;
+}
 
 body {
 	background: linear-gradient(165.96deg, #f8f4ff 0%, #eff0f4 100%);
@@ -49,17 +52,18 @@ body {
 .date {
 	margin-top: 2rem;
 	font-weight: 700;
-	font-size: 16px;
+	font-size: 1rem;
 	line-height: 160%;
 	color: #464646;
 }
 
 .card {
 	background: #ffffff;
-	backdrop-filter: blur(11px);
+	backdrop-filter: blur(0.75rem);
 	/* Note: backdrop-filter has minimal browser support */
-	border-radius: 8px;
+	border-radius: 0.5rem;
 	margin-bottom: 1rem;
+	/* max-width: 28rem; */
 }
 .card hr {
 	background: #464646;
@@ -79,25 +83,26 @@ body {
 .card .card-header .profile-img {
 	width: 2rem;
 	height: 2rem;
-	border-radius: 16px;
+	max-width: 4rem;
+	border-radius: 1rem;
 	margin-right: 1rem;
 }
 .card .card-header .pacient-name {
 	font-weight: 700;
-	font-size: 14px;
+	font-size: 1rem;
 	line-height: 160%;
 	color: #464646;
 }
 .card .card-header .appointment-type {
 	font-weight: 400;
-	font-size: 12px;
+	font-size: 0.75rem;
 	line-height: 160%;
 	color: #a3a3a3;
 	margin-left: 0.5rem;
 }
 .card .card-header button {
-	width: 32px;
-	height: 32px;
+	width: 2rem;
+	height: 2rem;
 	background: #f6f6f6;
 	border-radius: 9999px;
 }
@@ -107,7 +112,7 @@ body {
 }
 .card .time {
 	font-weight: 500;
-	font-size: 12px;
+	font-size: 0.75rem;
 	line-height: 160%;
 	color: #464646;
 	padding-left: 1rem;
@@ -119,15 +124,15 @@ body {
 	justify-content: space-between;
 }
 .card .action button {
-	border-radius: 8px;
+	border-radius: 0.5rem;
 	font-weight: 500;
-	font-size: 14px;
+	font-size: 1rem;
 	line-height: 160%;
 	padding: 0.75rem 1rem;
 }
 .card .action button.video {
 	background: #ffb050;
-	box-shadow: 0px 4px 16px rgba(255, 176, 80, 0.16);
+	box-shadow: 0 0.25rem 1rem rgba(255, 176, 80, 0.16);
 
 	color: #ffffff;
 }
@@ -158,8 +163,8 @@ footer {
 
 .floatingAction {
 	position: absolute;
-	bottom: 80px;
-	right: 16px;
+	bottom: 5rem;
+	right: 1rem;
 	z-index: 20;
 	width: 100%;
 	display: flex;
@@ -174,8 +179,8 @@ footer {
 	background: #4894ff;
 	box-shadow: 0px 4px 4px rgba(255, 152, 56, 0.06);
 	filter: drop-shadow(0px 4px 16px rgba(72, 148, 255, 0.5));
-	width: 56px;
-	height: 56px;
+	width: 3.5rem;
+	height: 3.5rem;
 	border-radius: 50%;
 	display: flex;
 	align-items: center;
@@ -183,18 +188,18 @@ footer {
 }
 .floatingAction span {
 	width: auto;
-	height: 19px;
+	height: 1.25rem;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	padding: 2px 8px;
-	gap: 10px;
+	padding: 0.25rem 0.5rem;
+	gap: 0.75rem;
 	background: #ffffff;
 	border-radius: 2323px;
 	font-family: "Montserrat";
 	font-style: normal;
 	font-weight: 500;
-	font-size: 12px;
+	font-size: 0.75rem;
 	line-height: 160%;
 	text-align: center;
 	color: #464646;
@@ -207,7 +212,7 @@ nav ul {
 }
 nav ul li a {
 	font-weight: 400;
-	font-size: 12px;
+	font-size: 0.75rem;
 	line-height: 160%;
 	align-items: center;
 	color: #464646;

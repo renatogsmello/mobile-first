@@ -10,3 +10,7 @@ Analisar e usar o layout de uma página no Figma para criar o cabeçalho da apli
 ### Dia 2
 
 Implementar o rodapé com a lista de ações e o botão flutuante. Ao selecionar o botão flutuante de cadastro, seja aplicado um efeito escuro por cima da tela principal e sejam exibidos outros dois botões
+
+### Dia 3
+
+Troca de pixel para rem e outros pequenos ajustes.
