@@ -1,5 +1,7 @@
 * {
 	font-family: "Montserrat", sans-serif;
+	margin: 0;
+	padding: 0;
 }
 
 button {
@@ -57,6 +59,7 @@ body {
 	backdrop-filter: blur(11px);
 	/* Note: backdrop-filter has minimal browser support */
 	border-radius: 8px;
+	margin-bottom: 1rem;
 }
 .card hr {
 	background: #464646;
@@ -142,11 +145,163 @@ body {
 	text-align: center;
 }
 
+footer {
+	background: #ffffff;
+	box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.06);
+	border-radius: 12px 12px 0px 0px;
+	padding: 0.5rem 1rem;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.floatingAction {
+	position: absolute;
+	bottom: 80px;
+	right: 16px;
+	z-index: 20;
+	width: 100%;
+	display: flex;
+	justify-content: right;
+}
+
+.floatingActionButton img {
+	-webkit-filter: brightness(0) invert(1);
+	filter: brightness(0) invert(1);
+}
+.floatingAction button {
+	background: #4894ff;
+	box-shadow: 0px 4px 4px rgba(255, 152, 56, 0.06);
+	filter: drop-shadow(0px 4px 16px rgba(72, 148, 255, 0.5));
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.floatingAction span {
+	width: auto;
+	height: 19px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 2px 8px;
+	gap: 10px;
+	background: #ffffff;
+	border-radius: 2323px;
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 160%;
+	text-align: center;
+	color: #464646;
+}
+
+nav ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+}
+nav ul li a {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 160%;
+	align-items: center;
+	color: #464646;
+	height: 100%;
+	justify-content: space-around;
+}
+nav ul li a.active {
+	color: #4894ff;
+}
+
+/* cores */
+.bg-black {
+	background-color: #000;
+}
+
 /* utility */
 
 .flex {
 	display: flex;
 }
+.flex-column {
+	flex-direction: column;
+}
 .items-center {
 	align-items: center;
+}
+
+.gap-4 {
+	gap: 1rem;
+}
+
+/* Position */
+
+.absolute {
+	position: absolute;
+}
+.relative {
+	position: relative;
+}
+
+.top-0 {
+	top: 0;
+}
+.bottom-0 {
+	bottom: 0;
+}
+
+/* transition */
+
+.transition-transform {
+	transition-property: transform;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 150ms;
+}
+
+.transition-opacity {
+	transition-property: opacity;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 150ms;
+}
+
+.-translate-y-16 {
+	transform: translateY(-4rem);
+}
+.-translate-y-32 {
+	transform: translateY(-8rem);
+}
+
+.delay-300 {
+	transition-delay: 300ms;
+}
+
+/* layout */
+
+.z-10 {
+	z-index: 10;
+}
+.z-20 {
+	z-index: 20;
+}
+.hidden {
+	display: none;
+}
+
+/* tamanhos */
+
+.w-full {
+	width: 100%;
+}
+
+/* efeitos */
+.opacity-60 {
+	opacity: 0.6;
+}
+.opacity-0 {
+	opacity: 0;
 }

@@ -11,6 +11,7 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
+		<div id="background" class="absolute top-0 bottom-0 bg-black opacity-60 w-full z-10 hidden"></div>
 		<div class="container">
 			<div id="profile">
 				<img src="./images/perfil-1.jpg" alt="profile" />
@@ -27,13 +28,13 @@
 						<div>
 							<span class="pacient-name">Luciana Dias</span>
 							<div class="flex items-center">
-								<img src="./images/Camera.png" alt="Consulta Remota" />
+								<img src="./images/icons/Camera.png" alt="Consulta Remota" />
 								<span class="appointment-type">Consulta remota</span>
 							</div>
 						</div>
 					</div>
 					<button type="button">
-						<img src="./images/chat1.png" alt="chat icon" />
+						<img src="./images/icons/chat1.png" alt="chat icon" />
 					</button>
 				</div>
 				<hr />
@@ -50,13 +51,13 @@
 						<div>
 							<span class="pacient-name">Larissa Santana</span>
 							<div class="flex items-center">
-								<img src="./images/pin.png" alt="Consulta Local" />
+								<img src="./images/icons/pin.png" alt="Consulta Local" />
 								<span class="appointment-type">Consulta no local</span>
 							</div>
 						</div>
 					</div>
 					<button type="button">
-						<img src="./images/chat1.png" alt="chat icon" />
+						<img src="./images/icons/chat1.png" alt="chat icon" />
 					</button>
 				</div>
 				<hr />
@@ -66,5 +67,53 @@
 				</div>
 			</div>
 		</div>
+		<div class="floatingAction">
+			<div id="pinButton" class="absolute transition-transform z-20 flex items-center gap-4">
+				<span class="transition-opacity opacity-0 ease-in">Nova consulta na casa do paciente</span>
+				<button type="button" class="floatingActionButton">
+					<img src="./images/icons/pin.png" width="14" height="16" alt="pin icon" />
+				</button>
+			</div>
+			<div id="cameraButton" class="absolute transition-transform z-20 flex items-center gap-4">
+				<span class="transition-opacity opacity-0 ease-in">Nova consulta por video</span>
+				<button type="button" class="floatingActionButton">
+					<img src="./images/icons/Camera.png" width="16" height="12" alt="camera icon" />
+				</button>
+			</div>
+			<button type="button" id="addButton" class="relative z-20">
+				<img src="./images/icons/maisicone.png" width="16" height="16" alt="plus icon" />
+			</button>
+		</div>
+		<footer>
+			<nav>
+				<ul>
+					<li>
+						<a class="flex flex-column active">
+							<img src="./images/icons/Calendarioicone.png" width="20" height="22" alt=" calendar icon" />
+							Consultas
+						</a>
+					</li>
+					<li>
+						<a class="flex flex-column">
+							<img src="./images/icons/clientes icone.png" width="24" height="20" alt=" clients icon" />
+							Clientes
+						</a>
+					</li>
+					<li>
+						<a class="flex flex-column">
+							<img src="./images/icons/relatorios icone.png" width="14" height="18" alt=" reports icon" />
+							Relatórios
+						</a>
+					</li>
+					<li>
+						<a class="flex flex-column">
+							<img src="./images/icons/menu icone.png" width="20" height="14" alt=" menu icon" />
+							Menu
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</footer>
+		<script src="./script.js"></script>
 	</body>
 </html>

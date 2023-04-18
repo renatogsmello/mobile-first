@@ -6,3 +6,7 @@ Desenvolvimento de uma página a partir de um layout no Figma, usando conceitos 
 ### Dia 1
 
 Analisar e usar o layout de uma página no Figma para criar o cabeçalho da aplicação, usando o conceito de Mobile First.
+
+### Dia 2
+
+Implementar o rodapé com a lista de ações e o botão flutuante. Ao selecionar o botão flutuante de cadastro, seja aplicado um efeito escuro por cima da tela principal e sejam exibidos outros dois botões
