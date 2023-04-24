@@ -309,6 +309,47 @@
 						</div>
 					</div>
 				</div>
+				<form action="">
+					<div class="form-container">
+						<div>
+							<label for="nome-paciente">Nome</label>
+							<input type="text" name="nome-paciente" id="" placeholder="Nome do Paciente" />
+						</div>
+						<div>
+							<label for="tipo-consulta">Tipo de Consulta</label>
+							<div class="relative">
+								<select name="tipo-consulta" id="">
+									<option disabled selected value="">Selecione uma opção</option>
+									<option value="Consulta Local">Consulta no local</option>
+									<option value="Consulta Remota">Consulta remota</option>
+								</select>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="currentColor"
+									class="absolute h-4"
+								>
+									<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+								</svg>
+							</div>
+						</div>
+						<div>
+							<label for="data-consulta">Data</label>
+							<input type="date" name="data-consulta" id="" />
+						</div>
+						<div>
+							<label for="horario-consulta">Horário</label>
+							<input type="time" name="horario-consulta" id="" />
+						</div>
+						<div class="flex-1">
+							<label for="observacoes-consulta">Observações</label>
+							<textarea type="time" name="observacoes-consulta" id=""></textarea>
+						</div>
+					</div>
+					<button type="submit">Salvar</button>
+				</form>
 			</div>
 		</div>
 		<div class="floatingAction">

@@ -22,3 +22,7 @@ Aplicar os media queries para mudar o numero de colunas de acordo com o tamanho 
 ### Dia 5
 
 Colocar o menu na lateral quando for desktop
+
+### Dia 6
+
+Criação de formulario para view desktop
