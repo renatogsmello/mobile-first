@@ -18,3 +18,7 @@ Troca de pixel para rem e outros pequenos ajustes.
 ### Dia 4
 
 Aplicar os media queries para mudar o numero de colunas de acordo com o tamanho da tela.
+
+### Dia 5
+
+Colocar o menu na lateral quando for desktop

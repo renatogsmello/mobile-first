@@ -17,6 +17,7 @@ body {
 
 .container {
 	padding: 0 1rem;
+	flex: 1;
 }
 
 #profile {
@@ -148,6 +149,33 @@ body {
 	display: block;
 	width: 100%;
 	text-align: center;
+}
+
+aside {
+	background-color: #ffffff;
+	width: 16rem;
+	padding: 2rem 1rem;
+}
+
+aside nav ul {
+	flex-direction: column;
+	gap: 1rem;
+}
+aside nav ul li a {
+	justify-content: flex-start;
+	gap: 1rem;
+	font-size: 1rem;
+	cursor: pointer;
+}
+aside nav ul li a:hover {
+	color: #4894ff;
+}
+aside nav ul li a.active {
+	font-weight: bold;
+	cursor: default;
+}
+aside nav ul li a img {
+	width: 24px;
 }
 
 footer {
@@ -320,6 +348,18 @@ nav ul li a.active {
 		grid-template-columns: repeat(2, minmax(0, 1fr));
 		gap: 1rem;
 	}
+	aside {
+		display: none;
+	}
+}
+@media screen and (max-width: 390px) {
+	.card-grid {
+		display: grid;
+		grid-template-columns: repeat(1, minmax(0, 1fr));
+	}
+	aside {
+		display: none;
+	}
 }
 @media screen and (min-width: 1280px) {
 	.card-grid {
@@ -330,5 +370,8 @@ nav ul li a.active {
 	.card .card-header .profile-img {
 		width: 3rem;
 		height: 3rem;
+	}
+	footer {
+		display: none;
 	}
 }
